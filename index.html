@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Vangelis D. Karalis, Professor of Clinical Pharmacy - Pharmacokinetics, Department of Pharmacy, National and Kapodistrian University of Athens.">
-  <title>Vangelis D. Karalis | Scientific Research</title>
+  <meta name="description" content="Vangelis D. Karalis develops new statistical methods, quantitative metrics, and computational frameworks for clinical research and drug development.">
+  <title>Vangelis D. Karalis | Quantitative Clinical Research</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d2d4f'/%3E%3Cpath d='M16 17h8l8 15 8-15h8L35.5 40v8h-7v-8z' fill='%23fff'/%3E%3Ccircle cx='49' cy='47' r='6' fill='%23d5a94e'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -164,12 +164,35 @@
     }
 
     h1 {
-      max-width: 780px;
+      max-width: 980px;
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2.8rem, 6vw, 5.8rem);
-      line-height: 0.94;
+      font-size: clamp(2.55rem, 5.6vw, 5.45rem);
+      line-height: 0.98;
       letter-spacing: 0;
+    }
+
+    .hero-identity {
+      margin: 0 0 20px;
+      color: #bfe7e4;
+      font-size: clamp(1rem, 1.6vw, 1.18rem);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-statement {
+      max-width: 900px;
+      margin: 28px 0 0;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: clamp(1.08rem, 2vw, 1.36rem);
+      line-height: 1.55;
+    }
+
+    .hero-purpose {
+      max-width: 840px;
+      margin: 15px 0 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 1rem;
     }
 
     .hero-name {
@@ -397,6 +420,125 @@
 
     .soft-section {
       background: #f3f8f7;
+    }
+
+    .directions-section {
+      background: #f7fafc;
+    }
+
+    .direction-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .direction-card {
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+      border-top: 4px solid var(--teal);
+    }
+
+    .direction-card:nth-child(2),
+    .direction-card:nth-child(5) {
+      border-top-color: var(--blue);
+    }
+
+    .direction-card:nth-child(3),
+    .direction-card:nth-child(6) {
+      border-top-color: var(--gold);
+    }
+
+    .direction-number {
+      margin-bottom: 14px;
+      color: var(--wine);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .direction-card dl {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+    }
+
+    .direction-card dt {
+      color: var(--navy);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .direction-card dd {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .direction-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 20px;
+    }
+
+    .direction-links a {
+      border: 1px solid #c9d6e2;
+      border-radius: 999px;
+      padding: 7px 11px;
+      color: var(--navy);
+      font-size: 0.82rem;
+      font-weight: 800;
+      background: #f8fbfd;
+    }
+
+    .direction-links a:hover {
+      border-color: var(--teal);
+      text-decoration: none;
+    }
+
+    .research-principle {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      margin: 0 0 30px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .research-principle div {
+      padding: 18px;
+      background: rgba(13, 45, 79, 0.72);
+    }
+
+    .research-principle strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffe3a3;
+    }
+
+    .research-principle span {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.92rem;
+    }
+
+    .software-section {
+      background: #eef5f8;
+    }
+
+    .software-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .software-card .direction-links {
+      margin-top: auto;
     }
 
     .soft-section .card {
@@ -661,6 +803,8 @@
       .section-heading,
       .research-grid,
       .research-side,
+      .direction-grid,
+      .research-principle,
       .grid.two,
       .grid.three {
         grid-template-columns: 1fr;
@@ -756,8 +900,10 @@
         <span>Vangelis D. Karalis</span>
       </a>
       <div class="nav-links">
+        <a href="#directions">Research Directions</a>
+        <a href="#research">Contributions</a>
+        <a href="#software">Software</a>
         <a href="#profile">Profile</a>
-        <a href="#research">Research</a>
         <a href="#links">Academic Links</a>
       </div>
     </nav>
@@ -767,24 +913,122 @@
     <section class="hero" aria-labelledby="page-title">
       <div class="hero-inner">
         <div>
-          <p class="eyebrow">Biomedical Data Science &amp; Mathematical Modeling</p>
-          <div class="hero-name">
-            <h1 id="page-title">Vangelis D. Karalis</h1>
-          </div>
+          <p class="eyebrow">Quantitative Clinical Research · Drug Development</p>
+          <p class="hero-identity">Vangelis D. Karalis · Professor</p>
+          <h1 id="page-title">New methodological ideas for problems that conventional approaches do not fully solve.</h1>
           <div class="hero-details">
             <div>
-              <p class="hero-subtitle">
-                <span class="hero-role">Professor</span>
-                <span class="hero-affiliation">Department of Pharmacy, National and Kapodistrian University of Athens</span>
+              <p class="hero-statement">
+                Developing new statistical methods, quantitative metrics, and computational
+                frameworks for clinical research and drug development—with particular applications
+                in bioequivalence and pharmacokinetics.
+              </p>
+              <p class="hero-purpose">
+                Turning unresolved scientific questions into testable methods, reproducible
+                software, and practically useful research tools.
               </p>
               <div class="hero-actions">
-                <a class="button primary" href="#research">Scientific research</a>
+                <a class="button primary" href="#directions">Explore research directions</a>
+                <a class="button" href="#software">Software &amp; reproducibility</a>
               </div>
             </div>
             <img class="faistos-disk" src="assets/faistos_disk.png" alt="Phaistos Disc">
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <section id="directions" class="directions-section" aria-labelledby="directions-title">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Research directions</p>
+          <div>
+            <h2 id="directions-title">Questions first. Methods built to answer them.</h2>
+            <p class="lead">
+              A research programme focused on unresolved quantitative problems in clinical research,
+              from the structure of data and endpoint assessment to virtual populations and
+              translational simulation.
+            </p>
+          </div>
+        </div>
+
+        <div class="direction-grid">
+          <article class="card direction-card">
+            <p class="direction-number">Direction 01</p>
+            <h3>Gap-Entropy Testing</h3>
+            <dl>
+              <div><dt>Problem</dt><dd>Classical location-based tests may miss structural differences between datasets.</dd></div>
+              <div><dt>Proposed idea</dt><dd>Use the entropy of ordered observation gaps to quantify hidden distributional structure.</dd></div>
+              <div><dt>Why it matters</dt><dd>It provides a complementary lens when equal means do not imply similar data-generating patterns.</dd></div>
+            </dl>
+            <div class="direction-links">
+              <a href="https://doi.org/10.53941/ams.2026.100019">Paper</a>
+              <a href="https://github.com/vkaralis/GAP-Entropy-Testing">Code</a>
+            </div>
+          </article>
+
+          <article class="card direction-card">
+            <p class="direction-number">Direction 02</p>
+            <h3>Vector-Based Comparison</h3>
+            <dl>
+              <div><dt>Problem</dt><dd>Multi-endpoint clinical evidence is often reduced to separate, disconnected comparisons.</dd></div>
+              <div><dt>Proposed idea</dt><dd>Represent endpoints as vectors and decompose their shared and orthogonal components.</dd></div>
+              <div><dt>Why it matters</dt><dd>It creates a geometric framework for examining endpoint relationships beyond isolated summaries.</dd></div>
+            </dl>
+            <div class="direction-links">
+              <a href="https://doi.org/10.3390/jcdd11070185">Paper</a>
+              <a href="https://github.com/vkaralis/vbc">Code</a>
+            </div>
+          </article>
+
+          <article class="card direction-card">
+            <p class="direction-number">Direction 03</p>
+            <h3>Average Slope</h3>
+            <dl>
+              <div><dt>Problem</dt><dd>Cmax is widely used as an absorption-rate metric although it also depends on disposition.</dd></div>
+              <div><dt>Proposed idea</dt><dd>Estimate absorption rate directly from concentration–time data through the Average Slope metric.</dd></div>
+              <div><dt>Why it matters</dt><dd>It seeks a more interpretable and data-driven measure for bioequivalence assessment.</dd></div>
+            </dl>
+            <div class="direction-links">
+              <a href="https://doi.org/10.3390/app13042257">Paper</a>
+              <a href="https://github.com/vkaralis/average-slope">Code</a>
+            </div>
+          </article>
+
+          <article class="card direction-card">
+            <p class="direction-number">Direction 04</p>
+            <h3>ML/AI in Bioequivalence</h3>
+            <dl>
+              <div><dt>Problem</dt><dd>Conventional bioequivalence analyses can overlook nonlinear patterns and interacting sources of variability.</dd></div>
+              <div><dt>Proposed idea</dt><dd>Use machine and deep learning to interrogate metrics, endpoints, and decision patterns.</dd></div>
+              <div><dt>Why it matters</dt><dd>It expands the analytical toolkit while keeping the clinical question—not the algorithm—at the centre.</dd></div>
+            </dl>
+            <div class="direction-links"><a href="https://doi.org/10.3390/app13010418">Paper</a></div>
+          </article>
+
+          <article class="card direction-card">
+            <p class="direction-number">Direction 05</p>
+            <h3>Synthetic Subjects</h3>
+            <dl>
+              <div><dt>Problem</dt><dd>Clinical studies are constrained by recruitment, cost, time, and unnecessary human exposure.</dd></div>
+              <div><dt>Proposed idea</dt><dd>Develop generative models for scientifically controlled virtual and hybrid populations.</dd></div>
+              <div><dt>Why it matters</dt><dd>Validated augmentation may support smarter study design without treating synthetic data as real evidence.</dd></div>
+            </dl>
+            <div class="direction-links"><a href="https://doi.org/10.3390/app13158793">Paper</a></div>
+          </article>
+
+          <article class="card direction-card">
+            <p class="direction-number">Direction 06</p>
+            <h3>In Vitro–In Vivo Simulation</h3>
+            <dl>
+              <div><dt>Problem</dt><dd>In vitro dissolution differences do not translate directly into expected clinical outcomes.</dd></div>
+              <div><dt>Proposed idea</dt><dd>Connect dissolution profiles with semi-physiological pharmacokinetic simulations.</dd></div>
+              <div><dt>Why it matters</dt><dd>It links formulation behaviour to prospective bioequivalence risk and study planning.</dd></div>
+            </dl>
+            <div class="direction-links"><a href="https://doi.org/10.3390/ma14030555">Paper</a></div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -797,11 +1041,10 @@
           <div>
             <h2 id="profile-title">Profile</h2>
             <p class="lead">
-              Professor Vangelis D. Karalis works at the intersection of biomedical sciences,
-              artificial intelligence, data science, and mathematical modeling, with applications
-              in clinical research, pharmacometrics, and computational medicine. His interdisciplinary
-              research integrates quantitative, computational, and clinical approaches to advance
-              modern healthcare, pharmaceutical sciences, and fundamental scientific understanding.
+              Professor Vangelis D. Karalis develops original quantitative approaches for clinical
+              research and drug development. His work connects statistics, pharmacokinetics,
+              mathematical modeling, data science, and artificial intelligence to address scientific
+              questions for which established methods provide only partial answers.
             </p>
           </div>
         </div>
@@ -824,7 +1067,8 @@
           <article class="card">
             <h3>Research Theme</h3>
             <p>
-              Data science and mathematical modeling in pharmaceutical and medical sciences.
+              Method development and reproducible computation in quantitative clinical research,
+              bioequivalence, pharmacokinetics, and pharmaceutical sciences.
             </p>
           </article>
         </div>
@@ -834,20 +1078,26 @@
     <section id="research" class="highlight-band" aria-labelledby="research-title">
       <div class="section-inner">
         <div class="section-heading center-heading">
-          <p class="section-kicker">Research</p>
+          <p class="section-kicker">Methodological contributions</p>
           <div>
-            <h2 id="research-title">Scientific Research</h2>
+            <h2 id="research-title">From scientific question to new method</h2>
             <p class="lead">
-              Publications are organized into three sections according to their scope,
-              contribution, and publication venue.
+              Selected contributions that introduce new metrics, frameworks, models, or
+              computational directions—and the publications that develop and test them.
             </p>
           </div>
         </div>
 
+        <div class="research-principle" aria-label="Research approach">
+          <div><strong>Problem</strong><span>Identify a limitation that matters scientifically or clinically.</span></div>
+          <div><strong>Method</strong><span>Develop a testable statistical, mathematical, or computational idea.</span></div>
+          <div><strong>Evidence</strong><span>Evaluate it through simulation, application, publication, and reproducible code.</span></div>
+        </div>
+
         <div class="research-grid">
           <article class="card research-main">
-            <h3>Concept-Introducing Research</h3>
-            <p>Articles that introduce new scientific concepts, frameworks, models, or methodological directions.</p>
+            <h3>Selected Methodological Contributions</h3>
+            <p>Research programmes built around a concrete problem, a proposed idea, and evidence of why it matters.</p>
 
             <div class="subtopic-grid">
               <section class="subtopic">
@@ -920,8 +1170,8 @@
 
           <div class="research-side">
             <article class="card conventional-card">
-              <h3>Conventional Articles</h3>
-              <p>Applied and methodological research articles in pharmacometrics, pharmacokinetics, and bioequivalence.</p>
+              <h3>Applied &amp; Collaborative Research</h3>
+              <p>Applied, translational, and collaborative studies across pharmacometrics, pharmacokinetics, clinical research, and bioequivalence.</p>
               <ol class="paper-list conventional-list">
                 <li>Nikolopoulos A, <u>Karalis V</u>. Implementation of Generative AI in Biomedical Research and Healthcare. Applied Biosciences [2026] https://doi.org/10.3390/applbiosci5020034</li>
                 <li>Tsyplakova A, Catic-Djorđevic A, Stefanović N, <u>Karalis V</u>. Optimizing Mycophenolate Therapy in Renal Transplant Patients Using Machine Learning and Population Pharmacokinetic Modeling. Medical Sciences [2025] https://doi.org/10.3390 /medsci13040235</li>
@@ -1050,6 +1300,59 @@
               </ol>
             </article>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="software" class="software-section" aria-labelledby="software-title">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Software &amp; reproducibility</p>
+          <div>
+            <h2 id="software-title">Methods that can be inspected, tested, and reused</h2>
+            <p class="lead">
+              Open implementations connect the conceptual contribution to executable examples,
+              automated tests, and transparent methodological assumptions.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid three">
+          <article class="card software-card">
+            <h3>Vector-Based Comparison</h3>
+            <p>
+              A tested Python implementation of endpoint decomposition using explicit orthogonal
+              vector projection, with multiple preprocessing options and a command-line interface.
+            </p>
+            <div class="direction-links">
+              <a href="https://github.com/vkaralis/vbc">Repository</a>
+              <a href="https://doi.org/10.3390/jcdd11070185">Article</a>
+            </div>
+          </article>
+
+          <article class="card software-card">
+            <h3>Gap-Entropy Testing</h3>
+            <p>
+              Computational material for examining structural and distributional differences
+              through the entropy of gaps between ordered observations.
+            </p>
+            <div class="direction-links">
+              <a href="https://github.com/vkaralis/GAP-Entropy-Testing">Repository</a>
+              <a href="https://doi.org/10.53941/ams.2026.100019">Article</a>
+            </div>
+          </article>
+
+          <article class="card software-card">
+            <h3>Average Slope</h3>
+            <p>
+              Code and examples supporting a data-derived pharmacokinetic metric proposed to
+              characterize absorption rate beyond the conventional use of Cmax.
+            </p>
+            <div class="direction-links">
+              <a href="https://github.com/vkaralis/average-slope">Repository</a>
+              <a href="https://doi.org/10.3390/app13042257">Article</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
