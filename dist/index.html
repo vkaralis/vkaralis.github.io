@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vangelis D. Karalis, Professor of Clinical Pharmacy - Pharmacokinetics, Department of Pharmacy, National and Kapodistrian University of Athens.">
+  <title>Vangelis D. Karalis | Scientific Research</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d2d4f'/%3E%3Cpath d='M16 17h8l8 15 8-15h8L35.5 40v8h-7v-8z' fill='%23fff'/%3E%3Ccircle cx='49' cy='47' r='6' fill='%23d5a94e'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #10243b;
+      --muted: #5a6878;
+      --line: #d7e0e8;
+      --paper: #ffffff;
+      --wash: #f4f7fb;
+      --navy: #0d2d4f;
+      --blue: #176b8f;
+      --teal: #087f78;
+      --wine: #8b2434;
+      --gold: #b7892e;
+      --shadow: 0 18px 48px rgba(22, 32, 47, 0.12);
+      --radius: 14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--wash);
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #d5a94e;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(217, 225, 234, 0.85);
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 12px 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border-radius: 10px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--navy), var(--teal));
+      font-size: 0.85rem;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--muted);
+      font-size: 0.93rem;
+      font-weight: 650;
+    }
+
+    .nav-links a:hover {
+      color: var(--navy);
+      background: #eef4f8;
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 72vh;
+      display: grid;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(115deg, rgba(8, 32, 58, 0.98), rgba(13, 45, 79, 0.92) 50%, rgba(8, 127, 120, 0.86)),
+        radial-gradient(circle at 18% 28%, rgba(255, 255, 255, 0.22), transparent 28%),
+        linear-gradient(45deg, #17395f, #f1f5f9);
+      color: #fff;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -42% 36%;
+      height: 72%;
+      background:
+        linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.18) 0 1px, transparent 1px 84px),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.11) 0 1px, transparent 1px 68px);
+      transform: rotate(-8deg);
+      opacity: 0.85;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 52px;
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 78px 0 72px;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: #bfe7e4;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.8rem, 6vw, 5.8rem);
+      line-height: 0.94;
+      letter-spacing: 0;
+    }
+
+    .hero-name {
+      display: block;
+    }
+
+    .hero-details {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: clamp(32px, 6vw, 80px);
+    }
+
+    .faistos-disk {
+      width: clamp(288px, 33vw, 396px);
+      height: auto;
+      filter: drop-shadow(0 22px 34px rgba(0, 0, 0, 0.28));
+      transition: transform 500ms ease;
+    }
+
+    .faistos-disk:hover {
+      transform: rotate(2deg) scale(1.015);
+    }
+
+    .hero-subtitle {
+      max-width: 720px;
+      margin: 26px 0 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: clamp(1.1rem, 2vw, 1.38rem);
+      line-height: 1.55;
+    }
+
+    .hero-role {
+      display: block;
+      color: #fff;
+      font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .hero-affiliation {
+      display: block;
+      max-width: 680px;
+      margin-top: 10px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: clamp(0.98rem, 1.5vw, 1.12rem);
+      line-height: 1.55;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      border-radius: 10px;
+      padding: 11px 16px;
+      color: #fff;
+      font-weight: 800;
+      background: rgba(255, 255, 255, 0.13);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+    }
+
+    .button.primary {
+      color: var(--navy);
+      background: #fff;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .profile-panel {
+      align-self: center;
+    }
+
+    .profile-visual {
+      display: grid;
+      place-items: center;
+    }
+
+    .profile-image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .profile-panel p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.87);
+      font-size: 0.98rem;
+    }
+
+    main {
+      background: var(--paper);
+    }
+
+    section {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-inner {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 74px 0;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(180px, 0.32fr) minmax(0, 0.68fr);
+      gap: 42px;
+      align-items: start;
+      margin-bottom: 34px;
+    }
+
+    .center-heading {
+      display: block;
+      text-align: center;
+    }
+
+    .center-heading .lead {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-kicker {
+      margin: 0;
+      color: var(--wine);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .profile-logo {
+      display: flex;
+      align-items: flex-start;
+      margin: 0;
+      padding-top: 8px;
+    }
+
+    .profile-logo img {
+      display: block;
+      width: min(100%, 290px);
+      height: auto;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 4vw, 3.35rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      background: #fff;
+      box-shadow: 0 12px 34px rgba(22, 32, 47, 0.07);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .profile-section .card:hover {
+      transform: translateY(-4px);
+      border-color: #c5b68e;
+      box-shadow: 0 18px 42px rgba(22, 32, 47, 0.11);
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 1.12rem;
+      line-height: 1.3;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    .card p {
+      margin: 0;
+    }
+
+    .card ul,
+    .card ol {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .card li + li {
+      margin-top: 8px;
+    }
+
+    .soft-section {
+      background: #f3f8f7;
+    }
+
+    .soft-section .card {
+      background: #fbfefd;
+      border-color: #cfe3df;
+    }
+
+    .profile-section {
+      background: #f6f4ee;
+    }
+
+    .profile-section .card {
+      background: #fffdf8;
+      border-color: #e2d9c8;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 16px;
+      margin: 0;
+    }
+
+    .contact-list div {
+      display: grid;
+      gap: 4px;
+    }
+
+    .contact-list dt {
+      color: var(--wine);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .contact-list dd {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list li {
+      position: relative;
+      padding-left: 28px;
+    }
+
+    .feature-list li::before {
+      content: "";
+      position: absolute;
+      top: 0.67em;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 5px rgba(12, 127, 122, 0.12);
+    }
+
+    .highlight-band {
+      background:
+        linear-gradient(90deg, rgba(21, 59, 99, 0.95), rgba(12, 127, 122, 0.92)),
+        #153b63;
+      color: #fff;
+    }
+
+    .highlight-band h2 {
+      color: #fff;
+    }
+
+    .highlight-band .section-kicker,
+    .highlight-band .lead {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .highlight-band .card {
+      border-color: rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: none;
+    }
+
+    .highlight-band .card h3,
+    .highlight-band .card p,
+    .highlight-band .card li {
+      color: #fff;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .research-side {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .research-side .card {
+      border-color: rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .research-side .card h3 {
+      color: #fff;
+    }
+
+    .research-side .card p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .research-side .card:nth-child(2) {
+      border-color: rgba(183, 137, 46, 0.42);
+      background: #3d3320;
+    }
+
+    .highlight-band .research-main {
+      background: #243447;
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .subtopic-grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .subtopic {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius);
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      transition: background 180ms ease, border-color 180ms ease;
+    }
+
+    .subtopic:hover {
+      border-color: rgba(213, 169, 78, 0.62);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .subtopic h4 {
+      margin: 0 0 8px;
+      color: #fff;
+      font-size: 1.07rem;
+      line-height: 1.28;
+    }
+
+    .subtopic p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.96rem;
+    }
+
+    .highlight-band .card .code-label {
+      color: #ffe3a3;
+      font-weight: 800;
+    }
+
+    .code-link {
+      color: #bfe7ff;
+    }
+
+    .subtopic-image {
+      display: block;
+      width: 50%;
+      height: auto;
+      margin: 16px auto 12px;
+      border-radius: var(--radius);
+      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.2);
+    }
+
+    .paper-list {
+      display: grid;
+      gap: 10px;
+      margin: 16px 0 0 28px;
+      padding-left: 2.6rem;
+    }
+
+    .paper-list li {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.95rem;
+      line-height: 1.55;
+      overflow-wrap: anywhere;
+    }
+
+    .paper-note {
+      display: inline-block;
+      margin-left: 4px;
+      color: #ffe3a3;
+      font-weight: 800;
+    }
+
+    .resources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .resource-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: var(--navy);
+      font-weight: 800;
+      background: #fff;
+    }
+
+    .resource-link:hover {
+      border-color: #b7c7d6;
+      background: #f7fafc;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    .site-footer {
+      background: #111827;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 28px 0;
+    }
+
+    .footer-inner p {
+      margin: 0;
+    }
+
+    @media (max-width: 840px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-inner,
+      .section-heading,
+      .research-grid,
+      .research-side,
+      .grid.two,
+      .grid.three {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-inner {
+        gap: 30px;
+        padding-top: 58px;
+      }
+
+      .profile-panel {
+        align-self: auto;
+      }
+
+      .profile-logo {
+        padding-top: 0;
+      }
+
+      .profile-logo img {
+        width: min(100%, 360px);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .nav,
+      .hero-inner,
+      .section-inner,
+      .footer-inner {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .nav-links a {
+        padding: 7px 9px;
+        font-size: 0.86rem;
+      }
+
+      .hero-name {
+        display: block;
+      }
+
+      .hero-details {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .faistos-disk {
+        width: 246px;
+        justify-self: center;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .button,
+      .resource-link {
+        width: 100%;
+      }
+
+      .section-inner {
+        padding: 56px 0;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .subtopic-image {
+        width: 100%;
+      }
+
+      .paper-list {
+        margin-left: 0;
+        padding-left: 1.6rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Vangelis D. Karalis homepage">
+        <span class="brand-mark">VK</span>
+        <span>Vangelis D. Karalis</span>
+      </a>
+      <div class="nav-links">
+        <a href="#profile">Profile</a>
+        <a href="#research">Research</a>
+        <a href="#links">Academic Links</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">Biomedical Data Science &amp; Mathematical Modeling</p>
+          <div class="hero-name">
+            <h1 id="page-title">Vangelis D. Karalis</h1>
+          </div>
+          <div class="hero-details">
+            <div>
+              <p class="hero-subtitle">
+                <span class="hero-role">Professor</span>
+                <span class="hero-affiliation">Department of Pharmacy, National and Kapodistrian University of Athens</span>
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#research">Scientific research</a>
+              </div>
+            </div>
+            <img class="faistos-disk" src="assets/faistos_disk.png" alt="Phaistos Disc">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="profile" class="profile-section" aria-labelledby="profile-title">
+      <div class="section-inner">
+        <div class="section-heading">
+          <figure class="profile-logo">
+            <img src="assets/NKUA.jpg" alt="National and Kapodistrian University of Athens logo">
+          </figure>
+          <div>
+            <h2 id="profile-title">Profile</h2>
+            <p class="lead">
+              Professor Vangelis D. Karalis works at the intersection of biomedical sciences,
+              artificial intelligence, data science, and mathematical modeling, with applications
+              in clinical research, pharmacometrics, and computational medicine. His interdisciplinary
+              research integrates quantitative, computational, and clinical approaches to advance
+              modern healthcare, pharmaceutical sciences, and fundamental scientific understanding.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid three">
+          <article class="card">
+            <h3>National and Kapodistrian University of Athens</h3>
+            <p>
+              Department of Pharmacy, National and Kapodistrian University of Athens,
+              University Campus, 15784 Athens, Greece.
+            </p>
+          </article>
+          <article class="card">
+            <h3>IACM / FORTH</h3>
+            <p>
+              Computational Pharmacology group, Institute of Applied and Computational Mathematics
+              (IACM), Foundation for Research and Technology Hellas (FORTH), Heraklion, Crete.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Research Theme</h3>
+            <p>
+              Data science and mathematical modeling in pharmaceutical and medical sciences.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="highlight-band" aria-labelledby="research-title">
+      <div class="section-inner">
+        <div class="section-heading center-heading">
+          <p class="section-kicker">Research</p>
+          <div>
+            <h2 id="research-title">Scientific Research</h2>
+            <p class="lead">
+              Publications are organized into three sections according to their scope,
+              contribution, and publication venue.
+            </p>
+          </div>
+        </div>
+
+        <div class="research-grid">
+          <article class="card research-main">
+            <h3>Concept-Introducing Research</h3>
+            <p>Articles that introduce new scientific concepts, frameworks, models, or methodological directions.</p>
+
+            <div class="subtopic-grid">
+              <section class="subtopic">
+                <h4>Gap-Entropy Testing (GET)</h4>
+                <p>GET is a novel statistical measure for revealing hidden patterns in the gaps between observations, beyond what the t-test can capture.</p>
+                <img class="subtopic-image" src="assets/GET.png" alt="Gap-Entropy Testing (GET)">
+                <ol class="paper-list">
+                  <li><u>Karalis V</u>. Gap-Entropy Testing (GET): A Framework for Structural and Distributional Differences. <i>Applied Mathematics and Statistics</i> [2026]. doi: 10.53941/ams.2026.100019. <span class="paper-note">Seminal article</span></li>
+                </ol>
+                <p><span class="code-label">Code:</span> <a class="code-link" href="https://github.com/vkaralis/GAP-Entropy-Testing">https://github.com/vkaralis/GAP-Entropy-Testing</a></p>
+              </section>
+
+              <section class="subtopic">
+                <h4>Vector-based Comparison (VBC)</h4>
+                <p>VBC is an alternative framework for considering endpoints in clinical studies. It treats endpoints as vectors in an N-dimensional space.</p>
+                <img class="subtopic-image" src="assets/VBC.png" alt="Vector-based Comparison (VBC)">
+                <ol class="paper-list">
+                  <li><u>Karalis V</u>. A Vector Theory of Assessing Clinical Trials: An Application to Bioequivalence. <i>J Cardiovasc Dev Dis</i> [2024]. doi: 10.3390/jcdd11070185. <span class="paper-note">Seminal article</span></li>
+                  <li>Kokkali M, <u>Karalis V</u>. Vector-Based Comparison and Average Slope Can Refine Bioequivalence Claims: A Machine and Deep Learning Approach. <i>Biopharm Drug Disp</i> [2026]. doi: 10.1002/bdd.70023</li>
+                  <li>Kokkali M, <u>Karalis V</u>. Vector-based Comparison as a Novel Framework for Assessing Multi-endpoint Clinical Trials: Applications to Actual Data. <i>Clinical and Translational Discovery</i> [2026]. doi: 10.1002/ctd2.70180</li>
+                </ol>
+              </section>
+
+              <section class="subtopic">
+                <h4>AI-generated subjects in clinical studies</h4>
+                <p>The use of generative artificial neural networks, including Normalizing Flow, WGANs, and VAEs, for synthesizing virtual subjects, thereby reducing the need for actual human exposure and reducing time and costs.</p>
+                <img class="subtopic-image" src="assets/AI_gen.png" alt="AI-generated subjects in clinical studies">
+                <ol class="paper-list">
+                  <li>Papadopoulos D, <u>Karalis V</u>. Variational Autoencoders for Data Augmentation in Clinical Studies. <i>Applied Sci</i> [2023]. doi.org/10.3390/app13158793. <span class="paper-note">Seminal article</span></li>
+                  <li>Papadopoulos D, <u>Karalis V</u>. Introducing an Artificial Neural Network for Virtually Increasing the Sample Size of Bioequivalence Studies. <i>Applied Sci</i> [2024]. doi.org/10.3390/app14072970</li>
+                  <li>Nikolopoulos A, <u>Karalis V</u>. Implementation of a Generative AI algorithm for Virtually Increasing the Sample Size of Clinical Studies. <i>Applied Sciences</i> [2024]. doi.org/10.3390/app14114570.</li>
+                  <li>Papadopoulos D, Karali G, <u>Karalis V</u>. Bioequivalence Studies of Highly Variable Drugs: An Old Problem Addressed by Artificial Neural Networks. <i>Applied Sciences</i> [2024]. doi.org/10.3390/app14125279.</li>
+                  <li>Nikolopoulos A, <u>Karalis V</u>. Artificial Intelligence Meets Bioequivalence: Using Generative Adversarial Networks for Smarter, Smaller Trials. <i>Machine Learning and Knowledge Extraction</i> [2025]. https://doi.org/10.3390/make7020047.</li>
+                  <li>Nikolopoulos A, <u>Karalis V</u>. Generative Neural Networks for Addressing the Bioequivalence of Highly Variable Drugs. <i>Algorithms</i> [2025]. https://doi.org/10.3390/a18050266</li>
+                  <li>Nikolopoulos A, <u>Karalis V</u>. The Use of Generative AI to Create Hybrid Populations for Bioequivalence Trials. <i>Applied Math Stat</i> [2026]. https://doi.org/10.53941/ams.2026.100003</li>
+                  <li>Papavramidou N, <u>Karalis V</u>. Generative Data Augmentation in Clinical Studies: A Normalizing Flow Framework with an Inferential Bias-Variance Perspective. <i>Applied Sciences</i> [2026]. https://doi.org/10.3390/app16104692</li>
+                </ol>
+              </section>
+
+              <section class="subtopic">
+                <h4>Average Slope (AS)</h4>
+                <p>AS is a new pharmacokinetic parameter proposed to express more appropriately the rate of absorption and replace Cmax. AS is calculated directly from the concentration-time data without any assumptions.</p>
+                <img class="subtopic-image" src="assets/AS.png" alt="Average Slope (AS)">
+                <ol class="paper-list">
+                  <li><u>Karalis V</u>. On the Interplay between Machine Learning, Population Pharmacokinetics, and Bioequivalence to Introduce Average Slope as a New Measure for Absorption Rate. <i>Applied Sci</i> [2023]. doi.org/10.3390/app13042257. <span class="paper-note">Seminal article</span></li>
+                  <li><u>Karalis V</u>. An In-Silico Approach Toward the Appropriate Absorption Rate Metric in Bioequivalence. <i>Pharmaceuticals</i> [2023]. doi: 10.3390/ph16050725.</li>
+                  <li>Kokkali M, <u>Karalis V</u>. Average Slope vs. Cmax: Which Truly Reflects the Drug Absorption Rate? <i>Applied Sciences</i> [2024]. doi.org/10.3390/app14146115.</li>
+                </ol>
+              </section>
+
+              <section class="subtopic">
+                <h4>Machine learning in bioequivalence</h4>
+                <p>This research direction introduces the use of machine learning approaches in bioequivalence studies.</p>
+                <img class="subtopic-image" src="assets/ML_BE.png" alt="Machine learning in bioequivalence">
+                <ol class="paper-list">
+                  <li><u>Karalis V</u>. Machine Learning in Bioequivalence: Towards Identifying an Appropriate Measure of Absorption Rate. <i>Applied Sci</i> [2023]. doi.org/10.3390/app13010418. <span class="paper-note">Seminal article</span></li>
+                </ol>
+              </section>
+
+              <section class="subtopic">
+                <h4>In Vitro - In Vivo Simulations (IVIVS)</h4>
+                <p>IVIVS introduces a semi-physiological modeling approach proposed to predict the outcome of a bioequivalence study based on in vitro dissolution data.</p>
+                <img class="subtopic-image" src="assets/IVIVS.png" alt="In Vitro - In Vivo Simulations (IVIVS)">
+                <ol class="paper-list">
+                  <li>Vlachou M, <u>Karalis V</u>. An In Vitro - In Vivo Simulation Approach for the Prediction of Bioequivalence. <i>Materials</i> 14(3):555 [2021]. DOI: 10.3390/ma14030555 <span class="paper-note">Seminal article</span></li>
+                </ol>
+              </section>
+            </div>
+          </article>
+
+          <div class="research-side">
+            <article class="card conventional-card">
+              <h3>Conventional Articles</h3>
+              <p>Applied and methodological research articles in pharmacometrics, pharmacokinetics, and bioequivalence.</p>
+              <ol class="paper-list conventional-list">
+                <li>Nikolopoulos A, <u>Karalis V</u>. Implementation of Generative AI in Biomedical Research and Healthcare. Applied Biosciences [2026] https://doi.org/10.3390/applbiosci5020034</li>
+                <li>Tsyplakova A, Catic-Djorđevic A, Stefanović N, <u>Karalis V</u>. Optimizing Mycophenolate Therapy in Renal Transplant Patients Using Machine Learning and Population Pharmacokinetic Modeling. Medical Sciences [2025] https://doi.org/10.3390 /medsci13040235</li>
+                <li>Tsyplakova N, Ismailos G, <u>Karalis V</u>. Optimising Pirfenidone Dosage Regimens in Idiopathic Pulmonary Fibrosis: Toward a Guide for Personalised Treatment. Xenobiotica [2025]. doi: 10.1080/00498254.2025.2450440.</li>
+                <li>Gkagkari P, Tagka A, Stratigos A, <u>Karalis V</u>, Kyritsi A, Vitsos A, Rallis MC. Differential Diagnosis of Irritant Versus Allergic Contact Dermatitis Based on Noninvasive Methods. Dermatol. Pract. Concept [2024]. doi: 10.5826/dpc.1404a231.</li>
+                <li>Kyritsi Α, Tagka Α, Stratigos Α, <u>Karalis V</u>. Preservative Contact Allergy in Occupational Dermatitis: A Machine Learning Analysis. Arch Dermatol Res [2024]. doi: 10.1007/s00403-024-03101-1.</li>
+                <li>Kyritsi Α, Tagka Α, Stratigos Α, <u>Karalis V</u>. Machine Learning in Allergic Contact Dermatitis: Identifying (Dis)similarities between Polysensitized and Monosensitized Patients. BioMedInformatics [2024]. doi.org/10.3390/biomedinformatics4020074.</li>
+                <li>Giakoumaki M, … / … <u>Karalis V</u>, Ralis M, Black H. Type I diabetes mellitus suppresses experimental skin carcinogenesis. Cancers [2024]. doi: 10.3390/cancers16081507.</li>
+                <li><u>Karalis V</u>. The Integration of Artificial Intelligence into Clinical Practice. Applied Biosciences [2024]. doi.org/10.3390/applbiosci3010002. [Promoted for the Journal Title Story / Journal LinkedIn promoted]</li>
+                <li>Gkousiaki M, <u>Karalis V</u>, Kyritsi K, Almpani C, Geronikolou S, Stratigos A, Rallis MC, Tagka A. Contact Allergy Caused by Acrylates in Nail Cosmetics: A Pilot Study from Greece. Contact Dermatitis [2024] doi.org/10.1111/cod.14485.</li>
+                <li>Stratidakis N, Tagka A …/… <u>Karalis V</u>, Dallas P, Stratigos A, Rallis M. Octenidine versus dispase gels for wound healing after cryosurgery treatment in patients with basal cell carcinoma. Adv Exp Med Biol [2023]. doi: 10.1007/978-3-031-31986-0_57.</li>
+                <li>Daousani C, <u>Karalis V</u>, Loukas Y, Schulpis K, Alexiou K, Dotsikas Y. Dried Blood Spots in Neonatal Studies: A Computational Analysis for the Role of the Hematocrit Effect. Pharmaceuticals [2023]. doi: 10.3390/ph16081126.</li>
+                <li>Kyritsi A, Tagka A. Stratigos A, Pesli M, Lagiokapa T, <u>Karalis V</u>. A retrospective analysis to investigate contact sensitization in Greek population using classic and machine learning techniques. Adv Exp Med Biol [2023]. doi: 10.1007/978-3-031-31982-2_15.</li>
+                <li>Damnjanović I, Tsyplakova N, Stefanović N, Tošić T, Catić-Đorđević A, <u>Karalis V</u>. Joint Use of Population Pharmacokinetics and Machine Learning for Optimizing Antiepileptic Treatment in Pediatric Population. Ther Adv Drug Saf [2023]. doi: 10.1177/20420986231181337. [Editor’s in Chief among the 4 Top Articles for 2023].</li>
+                <li>Matsota P, <u>Karalis V</u>, Saranteas T, Kiospe F, Markantonis SL. Ropivacaine pharmacokinetics in the arterial and venous pools after ultrasound-guided continuous thoracic paravertebral nerve block. J Anaesth Clin Pharmacol [2022]. doi: 10.4103/joacp.joacp_353_22.</li>
+                <li>Kousovista R, Karali G, <u>Karalis V</u>. Modeling the Double Peak Phenomenon in Drug Absorption Kinetics: The Case of Amisulpride. BioMedInformatics [2023]. doi.org/10.3390/biomedinformatics3010013.</li>
+                <li>Paschou S, <u>Karalis V</u>, Psaltopoulou T … / … Terpos E, Dimopoulos MA. COVID-19 BNT162b2 mRNA vaccine for patients with type 2 diabetes mellitus. Hormones (2022). doi: 10.1007/s42000-022-00419-1.</li>
+                <li>Paschou S, <u>Karalis V</u>, Psaltopoulou T … / … Terpos E, Dimopoulos MA. Patients with type 2 diabetes mellitus present similar immunological response to COVID-19 BNT162b2 mRNA vaccine with healthy subjects: a prospective cohort study. Hormones (2022). doi: 10.1007/s42000-022-00405-7.</li>
+                <li>Kikionis S, … <u>Karalis V</u>, Rallis M, Ioannou E, Roussis V. Ulvan-Based Nanofibrous Patches Enhance Wound Healing of Skin Trauma Resulting from Cryosurgical Treatment of Keloids. Marine Drugs (2022). doi: 10.3390/md20090551.</li>
+                <li>Terpos E, Fotiou D, <u>Karalis V</u>, … / … Dimopoulos MA. SARS-CoV-2 humoral responses following booster BNT162b2 vaccination in patients with B-cell malignancies. Am J Hematol (2022). doi: 10.1002/ajh.26669.</li>
+                <li>Ntanasis-Stathopoulos I, <u>Karalis V</u>, …/… Dimopoulos MA, Terpos E. Second booster BNT162b2 restores SARS-CoV-2 humoral response in patients with multiple myeloma, excluding those under anti-BCMA therapy. HemaSphere (2022). doi: 10.1097/HS9.0000000000000764.</li>
+                <li>Naoum G, Markantonis SL … / <u>Karalis V</u>. On the association between gastrointestinal symptoms and extragastric manifestations. Gastroenterology Research and Practice (2022). doi: 10.1155/2022/8379579.</li>
+                <li>Ntanasis-Stathopoulos I, <u>Karalis V</u>, …/… Dimopoulos MA, Terpos E. Third dose of the BNT162b2 vaccine results in sustained high levels of neutralizing antibodies against SARS-CoV-2 at 6 months following vaccination in healthy individuals. HemaSphere (2022). doi: 10.1097/HS9.0000000000000747.</li>
+                <li>Paschou S, <u>Karalis V</u>, … / … Dimopoulos M.A. Patients with autoimmune thyroiditis present similar immunological response to COVID-19 BNT162b2 mRNA vaccine with healthy subjects, while vaccination may affect thyroid function: a clinical study. Frontiers Endocrinol (2022). doi: 10.3389/fendo.2022.840668.</li>
+                <li>Terpos E, <u>Karalis V</u>, … / … Dimopoulos M.A. Comparison of Neutralizing Antibody Responses at 6 Months Post Vaccination with BNT162b2 and AZD1222. Biomedicines (2022]. doi: 10.3390/biomedicines10020338.</li>
+                <li>Markantonis SL, Markou N, … / … <u>Karalis V</u>. The pharmacokinetics of levetiracetam in critically ill adult patients: an intensive care unit clinical study. Applied Sci [2022]. doi.org/10.3390/app12031208.</li>
+                <li>Papadopoulos D … / … Dimopoulos M.A., <u>Karalis V</u>*, Terpos E*. Predictive factors for neutralizing antibody levels nine months after full vaccination with BNT162b2: results of a machine learning analysis. Biomedicines (2022). doi: 10.3390/biomedicines10020204. [* equal last authors]</li>
+                <li>Terpos E., <u>Karalis V</u>, Sklirou A … / … Dimopoulos MA. Third Dose of the BNT162b2 Vaccine Results in Very High Levels of Neutralizing Antibodies Against SARS-CoV-2; Results of a Prospective Study in 150 Health Professionals in Greece. Am J Hematol (2022) doi: 10.1002/ajh.26468.</li>
+                <li>Terpos E., <u>Karalis V</u>, Ntanasis-Stathopoulos I …/ …Dimopoulos MA. Sustained but declining humoral immunity against SARS-CoV-2 at 9 months post vaccination with BNT162b2: a prospective evaluation in 309 healthy individuals. HemaSphere (2021). doi: 10.1097/HS9.0000000000000677.</li>
+                <li>Kousovista R, Karali G, Vlasopoulou K, <u>Karalis V</u>. Validation of population pharmacokinetic models: a comparison of internal and external validation approaches for hydrochlorothiazide. Xenobiotica 9:1-17 (2021). doi: 10.1080/00498254.2021.2012727.</li>
+                <li>Konstantinidou S, Argyrakopoulou G, Tentolouris N, <u>Karalis V</u>, Kokkinos A. Interplay between baroreflex sensitivity, obesity and related cardiometabolic risk factors. Exp Ther Med (2021). doi: 10.3892/etm.2021.10990.</li>
+                <li>Rosati M, Terpos E, Agarwal M, <u>Karalis V</u>, … / … Felber B. Distinct Neutralization Profile of Spike Variants by Antibodies Induced upon SARS-CoV-2 Infection or Vaccination. Am J Hematol (2021). doi: 10.1002/ajh.26380.</li>
+                <li>Terpos E, <u>Karalis V</u>, … / …Trougakos I, Dimopoulos MA. Robust neutralizing antibody responses 6 months post vaccination with BNT162b2: a prospective study in 308 healthy individuals. Life (2021). doi: 10.3390/life11101077.</li>
+                <li>Karalia D, Samidi A, <u>Karalis V</u>, Vlachou M. 3D-printed oral dosage forms: mechanical properties, computational approaches and applications. Pharmaceutics (2021). doi: 10.3390/pharmaceutics13091401.</li>
+                <li>Terpos Ea, Trougakos Ia, <u>Karalis V</u> …/…Dimopoulos MA. Kinetics of anti-SARS-CoV-2 antibody responses 3 months post complete vaccination with BNT162b2; a prospective study in 283 health workers. Cells 10: 1942 (2021). DOI: 10.3390/cells1008194. [Equal contribution as first authors]</li>
+                <li>Robinson P, Terkeltaub R, Pillinger M, Shah B, <u>Karalis V</u>, … Nidorf M. Consensus statement regarding the efficacy and safety of long-term low-dose colchicine in gout and cardiovascular disease. Am J Med (2021). doi: 10.1016/j.amjmed.2021.07.025.</li>
+                <li>Terpos E, Politou M, Ntanasis-Stathopoulos I, <u>Karalis V</u>, Merkouri E, Fotiou D, Gavriatopoulou M, Malandrakis P, Kastritis E, Trougakos I, Dimopoulos MA. High Prevalence of Anti-PF4 Antibodies Following ChAdOx1 nCov-19 (AZD1222) Vaccination Even in the Absence of Thrombotic Events. Vaccines (2021). doi: 10.3390/vaccines9070712.</li>
+                <li>Kousovista R, Athanasiou C, Liaskonis K, Ivopoulou O, <u>Karalis V</u>. Quantifying the effect of inhospital antimicrobial use on the development of Colistin resistant Acinetobacter Baumannii strains: a time series analysis. Eur J Hosp Pharm (2021). doi: 10.1136/ejhpharm-2020-002606.</li>
+                <li>Terpos Ea, Trougakos Ia, <u>Karalis V</u>, …/… Dimopoulos MA. Comparison of neutralizing antibody responses against SARS-CoV-2 in healthy volunteers who received the BNT162b2 mRNA or the AZD1222 vaccine: Should the second AZD1222 vaccine dose be given earlier? Am J Hematol (2021) DOI: 10.1002/ajh.26248 [Top downloaded article from Wiley during its first 12 months of publication]</li>
+                <li>Kyritsi A, Kikionis S, … <u>Karalis V</u> … Roussis V, Rallis M. Management of Acute Radiodermatitis in Non-Melanoma Skin Cancer Patients Using Electrospun Nanofibrous Patches Loaded with Pinus halepensis Bark Extract. Cancers (2021)</li>
+                <li>Kousovista R, Athanasiou C, Liaskonis K, Ivopoulou O, Ismailos G, <u>Karalis V</u>. Correlation between Acinetobacter baumannii resistance and hospital use of meropenem, cefepime, and ciprofloxacin: Time series analysis and dynamic regression models. Pathogens 10, 480 (2021). doi.org/10.3390/pathogens10040480</li>
+                <li>Cardozo B, Karatza E, <u>Karalis V</u>. Osteoporosis treatment with risedronate: a population pharmacokinetic model for the description of its absorption and low plasma levels. Osteoporos Int (2021). DOI: 10.1007/s00198-021-05944-0</li>
+                <li>Karatza E, Ismailos G, <u>Karalis V</u>. Colchicine for the treatment of COVID-19 patients: efficacy, safety, and model informed dosage regimens. Xenobiotica (2021). DOI: 10.1080/00498254.2021.1909782	[Top 10 most cited articles in Xenobiotica]</li>
+                <li>Karatza E, <u>Karalis V</u>. Investigating the impact of gastric emptying on pharmacokinetic parameters using delay differential equations and principal component analysis. Eur J Drug Metab (2021). DOI: 10.1007/s13318-021-00683-3</li>
+                <li>Kousovista R, Athanasiou C, Liaskonis K, Ivopoulou O, <u>Karalis V</u>. Association of antibiotic use with the resistance epidemiology of Pseudomonas Aeruginosa in hospital setting: a four-year retrospective time series analysis. Sci Pharm (2021). doi.org/10.3390/scipharm89010013</li>
+                <li>Kontostathi M, Isou S, … <u>Karalis V</u>, Klamarias L, Dania F, Papaioannou GT, Roussis V, Polychronopoulos E, Anastassopoulou J, Theophanides T, Rallis MC, Black HS. Influence of Omega-3 Fatty Acid-Rich Fish Oils on Hyperlipidemia: Effect of Eel, Sardine, Trout, and Cod Oils on Hyperlipidemic Mice. J Med Food (2021). DOI: 10.1089/jmf.2020.0114</li>
+                <li>Konstantinidou S, Kostaras P, Anagnostopoulos GE, Markantonis SL, <u>Karalis V</u>, Konstantinidis K. A Retrospective Study on the Evaluation of the Symptoms, Medications, and Improvement of the Quality of Life of Patients Undergoing Robotic Surgery for Gastroesophageal Reflux Disease. Exp Ther Med 21:174 (2021)</li>
+                <li>Karatza E, <u>Karalis V</u>. Non-linear mixed effects modeling and simulation for exploring variability sources in dissolution curves: a BCS class II case example. J Bioequiv Bioavail 12: 1-6 (2020)</li>
+                <li>Karatza E, Ismailos G, Marangos M, <u>Karalis V</u>. Optimization of hydroxychloroquine dosing based on COVID-19 patients’ characteristics: a review of the literature and simulations. Xenobiotica 51:127-138 (2021)</li>
+                <li>Karatza E, <u>Karalis V</u>. Delay differential equations for the description of Irbesartan pharmacokinetics: a population approach to model absorption complexities leading to dual peaks. Eur J Pharm Sci. 153: 105498 (2020)</li>
+                <li><u>Karalis V</u>, Ismailos G, Karatza E. Chloroquine dosage regimens in patients with COVID-19: safety risks and optimization using simulations. Safety Science 129: 104842 (2020)</li>
+                <li>Karatza Ε, Markantonis S, Savvidou Α, Verentzioti Α, Siatouni Α, Alexoudi Α, Gatzonis S, Mavrokefalou E, <u>Karalis V</u>. Pharmacokinetic and Pharmacodynamic modeling of levetiracetam: investigation of factors affecting the clinical outcome. Xenobiotica 24: 1-11 (2020)</li>
+                <li>Vlachou M, Siamidi A, Goula E, Georgas P, Pippa N, <u>Karalis V</u>, Sentoukas T, Pispas S. Probing the release of the chronobiotic hormone melatonin from hybrid calcium alginate hydrogel beads. Acta Pharm. 70: 527-38 (2020)</li>
+                <li>Karatza E. <u>Karalis V</u>. Modelling gastric emptying: a pharmacokinetic model simultaneously describing distribution of losartan and its active metabolite EXP-3174. Basic Clin Pharmacol Toxicol 126: 193-202 (2020)</li>
+                <li>Kotroni E, Simirioti E, Kikionis S, Sfiniadakis I, Siamidi A, <u>Karalis V</u>, Vitsos A, Vlachou M, Ioannou E, Roussis V, Rallis M. In vivo evaluation of the anti-inflammatory activity of electrospun micro/nanofibrous patches loaded with Pinus halepensis bark extract on hairless mice skin. Materials 12: 2596: 1-13 (2019)</li>
+                <li>Daousani C, <u>Karalis V</u>, Malenovićc A, Dotsikas Y. Hematocrit Effect on Dried Blood Spots in Adults: A Computational Study and Theoretical Considerations. Scand J Clin Lab Invest. 79(5): 325-33 (2019)</li>
+                <li>Soulele K, <u>Karalis V</u>. Development of a joint population pharmacokinetic model of ezetimibe and its conjugated metabolite. Eur J Pharm Sci.  128: 18-26 (2019)</li>
+                <li>Georgiou E, Schoina E, Markantonis SL, <u>Karalis V</u>, Athanasopoulos P, Chrysoheris P, Antonakopoulos F, Konstantinidis K. Laparoscopic TEP Inguinal Hernia Repair: Retrospective Study on Prosthetic Materials, Postoperative Management and Quality of Life. Medicine 97(52):e13974 (2018)</li>
+                <li>Ioannidis K, …, <u>Karalis V</u>, Markantonis S. Do we need to adopt antifungal stewardship programs? Eur J Hosp Pharm. 25:A77-A78 (2018)</li>
+                <li>Soulele K, <u>Karalis V</u>. On the Population Pharmacokinetics and the Enterohepatic Recirculation of Total Ezetimibe. Xenobiotica.  27: 1-11 (2018)</li>
+                <li>Soulele K, Macheras P, <u>Karalis V</u>. On the Pharmacokinetics of Two Inhaled Budesonide/Formoterol Combinations in Asthma Patients Using Modeling Approaches. Pulm Pharmacol Ther. 48: 168-78 (2017)</li>
+                <li>Vlachou M, Siamidi A, Spaneas D, Lentzos D, Ladia P, Anastasiou K, Papanastasiou I, Foscolos AS, Georgiadis MO, <u>Karalis V</u>, Kellici T, Mavromoustakos T. In vitro Controlled Release of two new Tuberculocidal Adamantane Aminoethers from Solid Pharmaceutical Formulations (II). Drug Res. 67(11):653-60 (2017)</li>
+                <li>Daousani C, <u>Karalis V</u>. Paediatric medicines: regulatory and scientific issues. Drug Res 67: 377-84 (2017)</li>
+                <li>Soulele K, Macheras P, <u>Karalis V</u>. Pharmacokinetic Analysis of Inhaled Salmeterol in Asthma Patients: Evidence from Two Dry Powder Inhalers. Biopharm Drug Dispos. 38: 407-419 (2017) [Top-20 downloaded article 2017-18]</li>
+                <li>Vlachou M, Siamidi A, Diamantidi E, Iliopoulou A, Papanastasiou I, Ioannidou V, Kourbeli V, Foscolos AS, Vocatc A, Colec S, <u>Karalis V</u>, Kellici T, Mavromoustakos T. In vitro Controlled Release from Solid Pharmaceutical Formulations of two new Adamantane Aminoethers with Antitubercular Activity (Ι). Drug Res 67: 447-450 (2017)</li>
+                <li>Gkinou C, Kani C, Souliotis K, <u>Karalis V</u>, Markantonis-Kyroudi S. Generic drugs – Do they offer the same safety and efficacy as originator medicines? Perceptions and attitudes of final year pharmacy students in Greece. Value in Health 19:A347-A766 (2016)</li>
+                <li>Markantonis SL, Melemeni A, Markidou M, Haikali SI, <u>Karalis V</u>, Fassoulaki A. Ropivacaine, IL-6 and TNF-α plasma levels during intermittent epidural and continuous wound infusion of ropivacaine for analgesia after hysterectomy or myomectomy: An observational study. Pharmacology 98(5-6): 294-8 (2016)</li>
+                <li><u>Karalis V</u>. From Bioequivalence to Biosimilarity: The Rise of a Novel Regulatory Framework. Drug Res. 66: 1-6 (2016)</li>
+                <li>Soulele K, Macheras P, Silvestro L, Rizea Savu S, <u>Karalis V</u>. Population pharmacokinetics of fluticasone propionate/salmeterol using two different dry powder inhalers. Eur J Pharm Sci. 80: 33-42 (2015)</li>
+                <li>Daousani C, <u>Karalis V</u>. Bioequivalence studies in Europe before and after 2010. Clin Res Regul Affairs. 32: 9-21 (2015) [Invited Review]</li>
+                <li>Macheras P, <u>Karalis V</u>. A Non-Binary Biopharmaceutical Classification of Drugs: the ΑΒΓ system. Int J Pharm. 464:85-90 (2014)</li>
+                <li><u>Karalis V</u>, Macheras P. On the Statistical Model of the Two-Stage Designs in Bioequivalence Assessment. J Pharm Pharmacol. 66(1):48-52 (2014)</li>
+                <li><u>Karalis V</u>, Macheras P, Bialer M. Generic Products of Antiepileptic Drugs: A Perspective on Bioequivalence, Bioavailability and Formulation Switches Using Monte Carlo Simulations. CNS Drugs. 28:69-77 (2014</li>
+                <li><u>Karalis V</u>. The Role of the Upper Sample Size Limit in Two-Stage Bioequivalence Designs. Int J Pharm. 456:87-94 (2013)</li>
+                <li><u>Karalis V</u>, Bialer M, Macheras P. Quantitative Assessment of the Switchability of Generic Products. Eur J Pharm Sci. 50:476-483 (2013</li>
+                <li>Macheras P, <u>Karalis V</u>, Valsami G. Keeping a critical eye on the science and the regulation of oral drug absorption: A review. J Pharm Sci. 102: 3018-36 (2013)</li>
+                <li><u>Karalis V</u>, Macheras P. An insight into the properties of a two-stage design in bioequivalence studies. Pharm Res. 30:1824-35 (2013</li>
+                <li>Symillides M, <u>Karalis V</u>, Macheras P. Exploring the relationships between scaled bioequivalence limits and within-subject variability. J Pharm Sci. 102:296-301 (2013)</li>
+                <li><u>Karalis V</u>, Macheras P. Current approaches of bioequivalence testing. Expert Opin Drug Metab Toxicol. 2012 8:929-42. (Invited Expert Opinion) [Selected as ‘Editor’s Pick’ in August 2012]</li>
+                <li>Maltezou HC, Drakoulis N, Siahanidou T, <u>Karalis V</u>, Zervaki E, Dotsikas Y, Loukas YL, Theodoridou M. Safety and Pharmacokinetics of Oseltamivir for Prophylaxis of Neonates Exposed to Influenza H1N1. Pediatr Infect Dis J. 31:527-9 (2012)</li>
+                <li><u>Karalis V</u>, Symillides M., Macheras P. Bioequivalence of highly variable drugs: a comparison of the newly proposed regulatory approaches by FDA and EMA. Pharm. Res. 29:1066-77 (2012)</li>
+                <li><u>Karalis V</u>, Symillides M., Macheras P. On the leveling-off properties of the new bioequivalence limits for highly variable drugs of the EMA guideline. Eur J. Pharm. Sci. 44:497-505 (2011)</li>
+                <li><u>Karalis V</u>, Symillides M, Macheras P. Novel methods to assess bioequivalence. Expert Opin Drug Metab Toxicol. 7:79-88 (2011) (Invited Expert Opinion)</li>
+                <li><u>Karalis V</u>, Magklara E, Shah V, Macheras P. From Drug Delivery Systems to Drug Release, Dissolution, IVIVC, BCS, BDDCS, Bioequivalence and Biowaivers. Pharm. Res. 27: 2018-2029 (2010</li>
+                <li><u>Karalis V</u>, Macheras P. Examining the Role of Metabolites in Bioequivalence Assessment. J. Pharm. Pharmaceut. Sci. 13: 198-217 (2010)</li>
+                <li><u>Karalis V</u>, Symillides M, Macheras P. Comparison of the Reference Scaled Bioequivalence Semi-Replicate Method with other Approaches: Focus on Human Exposure to Drugs. Eur. J. Pharm. Sci. 38: 55-63 (2009)</li>
+                <li><u>Karalis V</u>, Macheras P, Van Peer A, Shah V. Bioavailability and Bioequivalence: Focus on Physiological Factors and Variability. Pharm. Res. 25: 1956-62 (2008)</li>
+                <li>Kytariolos J, <u>Karalis V</u>, Macheras P, Symillides M. Novel Scaled bioequivalence limits with levelling-off properties. Pharm. Res. 23:2657-64 (2006)</li>
+                <li><u>Karalis V</u>, Macheras P, Symillides M. Geometric mean ratio dependent scaled bioequivalence limits with levelling-off properties. Eur. J. Pharm. Sci. 26: 54-61 (2005)</li>
+                <li><u>Karalis V</u>, Symillides M, Macheras P. Novel scaled average bioequivalence limits based on GMR and variability considerations. Pharm. Res. 21: 1933-1942 (2004)</li>
+                <li>Dokoumetzidis A, <u>Karalis V</u>, Iliadis A, Macheras P. The heterogeneous course of drug transit through the body. Trends Pharmacol. Sci. 25: 140-146 (2004)</li>
+                <li>Kosmidis K, <u>Karalis V</u>, Argyrakis P, Macheras P. Michaelis-Menten kinetics under spatially constrained conditions: application to mibefradil pharmacokinetics. Biophys. J. 87: 1498-1506 (2004)</li>
+                <li><u>Karalis V</u>, Dokoumetzidis A, Macheras P. A physiologically based approach for the estimation of recirculatory parameters. J. Pharmacol. Exp. Ther. 308: 198-205 (2004)</li>
+                <li><u>Karalis V</u>, Tsantili-Kakoulidou A, Macheras P. Quantitative structure pharmacokinetic relationships for disposition parameters of cephalosporins. Eur. J. Pharm. Sci. 20: 115-123 (2003)</li>
+                <li><u>Karalis V</u>, Macheras P. Pharmacodynamic considerations in bioequivalence assessment: Comparison of novel and existing metrics. Eur. J. Pharm. Sci. 19: 45-56 (2003)</li>
+                <li><u>Karalis V</u>, Tsantili-Kakoulidou A, Macheras P. Multivariate statistics of disposition pharmacokinetic parameters for structurally unrelated drugs used in therapeutics. Pharm. Res. 19: 1829-1836 (2002)</li>
+                <li><u>Karalis V</u>, Macheras P. Drug disposition viewed in terms of the fractal volume of distribution. Pharm. Res. 19: 697-704 (2002)</li>
+                <li><u>Karalis V</u>, Claret L, Iliadis A, Macheras P. Fractal volume of drug distribution: it scales proportionally to body mass. Pharm. Res. 18: 1056-1060 (2001)</li>
+              </ol>
+            </article>
+            <article class="card book-card">
+              <h3>Book Chapters &amp; National Journal Articles</h3>
+              <ol class="paper-list book-list">
+              <li><u>Karalis V</u>. Pharmacokinetics and Pharmacodynamics in Hematocrit and Albumin Disorders. In: Baltopoulos G (Ed.): Intensive Care &amp; Emergency Medicine: Medications for IDE &amp; ED. 28th book. Epistimon (2026).</li>
+              <li>Tsyplakova A, Catic-Ðordevic Aleksandra, Stefanovic Nikola, <u>Karalis VD</u>. Joint Use of Machine Learning and Population Pharmacokinetics to Optimize Mycophenolate Therapy in Renal Transplant Patients. J Am College Clin Pharm, 216. DOI: 10.1002/jac5.70065.</li>
+              <li>Theofili MI, <u>Karalis V</u>. Artificial Intelligence applications in Nanosystems: Development, Characterization, and Comparison. In: Techniques and Protocols for Evaluating Nanosystems. Eds. N. Pippa, N. Lagopati. Elsevier (accepted, to be published: October 1, 2025).</li>
+              <li><u>Karalis V</u>. Pharmacokinetic and Pharmacodynamic Considerations and their Distinct Characteristics in the Intensive Care Unit. In: Baltopoulos G (Ed.): Intensive Care &amp; Emergency Medicine: Medications for IDE &amp; ED. 27th book. Epistimon (2025).</li>
+              <li>Papacharalambous M, <u>Karalis V</u>. In Silico Clinical Trials for the Optimization of Anticoagulant Therapy. Pharmakeftiki. 37, 1, 42-57 (2025).</li>
+              <li><u>Karalis V</u>, Catić-Đorđević A. Artificial Intelligence in Drug Development, Clinical Trials, and Healthcare. Acta Medica Medianae. 10.5633/amm.2025.0110.</li>
+              <li>Papadaki K, <u>Karalis V</u>. Prolonged intravenous administration of antibiotics. In: Baltopoulos G (Ed.): Intensive Care and Urgent Medicine: Water and electrolytes. 26th book. pg. 956-960. Epistimon (2024).</li>
+              <li>Karnaki A, Siamidi A, <u>Karalis V</u>, Lagopati N, Pippa N, Vlachou M. Thermo-responsive hydrogels: current status and future perspectives. Bioinspired Technology and Biomechanics - Annual Volume 2024. DOI: 10.5772/intechopen.114986.</li>
+              <li><u>Karalis V</u>. Artificial Intelligence in Drug Discovery and Clinical Practice. pp. 215-255. In: From Current to Future Trends in Pharmaceutical Technology. Eds. N. Pippa, M. Chountoulesi, C. Demetzos. Elsevier, Pub. March 1, 2023.</li>
+              <li>Kyritsi K, Tagka A, Stratigos A, <u>Karalis V</u>. Analysis of Polysensitization and Monosensitization using Classic and Machine Learning Techniques. Free Radic Biol Med. 201 Sup(1), 49-50 (2023).</li>
+              <li>Ntousi S, <u>Karalis V</u>. SARS-CoV-2 coronavirus: pathogenesis, pharmacotherapy, and treatment with monoclonal antibodies. Pharmakeftiki. 34: 39-67 (2022).</li>
+              <li>Deligiannopoulou A, <u>Karalis V</u>. Nanobots in Medicine. Physica Medica 104S2 (2022) S1–S66. DOI: 10.1016/S1120-1797(22)03185-4.</li>
+              <li>Giannouli E, <u>Karalis V</u>. In the pursuit of longevity: anti-aging substances, nanotechnological preparations, and emerging approaches (2022). doi: https://doi.org/10.1101/2022.03.20.22272670 [medRxiv preprint].</li>
+              <li>Kontogiannis O, <u>Karalis V</u>. On the in vivo kinetics of gene delivery vectors (2022). MedRxiv. https://doi.org/10.1101/2022.02.11.22269834 [medRxiv preprint].</li>
+              <li>Karatza E, <u>Karalis V</u>, Markantonis-Kyroudi S. Pharmacokinetics in critically ill elder patients. 21st book. pp. 930-943. In: Baltopoulos G, Boutzouka E, Tsigkou E, Katsoulas T (Eds): Intensive Care and Urgent Medicine: Old age and severe illness. Epistimon (2018).</li>
+              <li>Filippakis A, <u>Karalis V</u>, Karatza E. Mathematical models in cancer chemotherapy. Pharmakeftiki. 30: 45-63 (2018).</li>
+              <li><u>Karalis V</u>. Modeling and Simulation in Bioequivalence. pp. 227-255, Chapter 10. In: Modeling in Biopharmaceutics, Pharmacokinetics and Pharmacodynamics. Homogeneous and Heterogeneous Approaches. 2nd Edition, Springer International Publishing, Switzerland (2016).</li>
+              <li>Doulou K, <u>Karalis V</u>, Markantonis-Kyroudi S, Petropoulos F, Zafiris E, Naoum G. A retrospective study aiming at correlating non-gastrointestinal symptoms with disorders of the digestive tract. Pharmakeftiki 30(1): 31-43 (2018).</li>
+              <li>Gavriil ES, <u>Karalis V</u>, Andreadou I. Clopidogrel: Factors that affect its action. Pharmakeftiki. 25: 1-15 (2013).</li>
+              <li><u>Karalis V</u>, Markantonis-Kyroudis S. Gender Related Effects on Pharmacokinetics. Pharmakeftiki. 20 (2): 68-81 (2007).</li>
+              <li><u>Karalis V</u>, Markantonis-Kyroudis S. Effects of Food on Pharmacokinetics. Pharmakeftiki. 20 (1): 21-34 (2007).</li>
+              <li><u>Karalis V</u>, Macheras P. Metrics for the Assessment of Bioequivalence. Pharmakeftiki. 15: 37-44 (2002).</li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" aria-labelledby="links-title">
+      <div class="section-inner">
+        <div class="section-heading center-heading">
+          <p class="section-kicker">Links</p>
+          <div>
+            <h2 id="links-title">Selected academic links</h2>
+          </div>
+        </div>
+
+        <div class="resources">
+          <a class="resource-link" href="https://www.iacm.forth.gr/divisions/applied-science/computational-pharmacology">IACM-FORTH</a>
+          <a class="resource-link" href="https://scholar.google.gr/citations?user=cMcmXMYAAAAJ&amp;hl=el">Google Scholar</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Vangelis D. Karalis</p>
+      <p>Department of Pharmacy · National and Kapodistrian University of Athens</p>
+    </div>
+  </footer>
+</body>
+</html>
