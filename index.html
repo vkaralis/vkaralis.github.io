@@ -172,7 +172,7 @@
     }
 
     .hero-identity {
-      margin: 0 0 64px;
+      margin: 0 0 86px;
       color: #bfe7e4;
       font-size: clamp(1rem, 1.6vw, 1.18rem);
       font-weight: 800;
@@ -698,6 +698,35 @@
       font-size: 0.96rem;
     }
 
+    .method-details {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 0;
+      padding: 18px;
+      border-left: 3px solid #ffe3a3;
+      background: rgba(7, 25, 43, 0.34);
+    }
+
+    .method-details dt {
+      color: #ffe3a3;
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .method-details dd {
+      margin: 2px 0 0;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .paper-list a {
+      color: #bfe7ff;
+      font-weight: 750;
+    }
+
     .highlight-band .card .code-label {
       color: #ffe3a3;
       font-weight: 800;
@@ -898,8 +927,7 @@
         <span>Vangelis D. Karalis</span>
       </a>
       <div class="nav-links">
-        <a href="#directions">Research Directions</a>
-        <a href="#research">Contributions</a>
+        <a href="#research">Methodological Contributions</a>
         <a href="#links">Academic Links</a>
         <a href="https://github.com/vkaralis">GitHub</a>
       </div>
@@ -927,87 +955,6 @@
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <section id="directions" class="directions-section" aria-label="Research directions">
-      <div class="section-inner">
-        <div class="direction-grid">
-          <article class="card direction-card">
-            <p class="direction-number">Direction 01</p>
-            <h3>Gap-Entropy Testing</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>Classical location-based tests may miss structural differences between datasets.</dd></div>
-              <div><dt>Proposed idea</dt><dd>Use the entropy of ordered observation gaps to quantify hidden distributional structure.</dd></div>
-              <div><dt>Why it matters</dt><dd>It provides a complementary lens when equal means do not imply similar data-generating patterns.</dd></div>
-            </dl>
-            <div class="direction-links">
-              <a href="https://doi.org/10.53941/ams.2026.100019">Paper</a>
-              <a href="https://github.com/vkaralis/GAP-Entropy-Testing">Code</a>
-            </div>
-          </article>
-
-          <article class="card direction-card">
-            <p class="direction-number">Direction 02</p>
-            <h3>Vector-Based Comparison</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>Multi-endpoint clinical evidence is often reduced to separate, disconnected comparisons.</dd></div>
-              <div><dt>Proposed idea</dt><dd>Represent endpoints as vectors and decompose their shared and orthogonal components.</dd></div>
-              <div><dt>Why it matters</dt><dd>It creates a geometric framework for examining endpoint relationships beyond isolated summaries.</dd></div>
-            </dl>
-            <div class="direction-links">
-              <a href="https://doi.org/10.3390/jcdd11070185">Paper</a>
-              <a href="https://github.com/vkaralis/vbc">Code</a>
-            </div>
-          </article>
-
-          <article class="card direction-card">
-            <p class="direction-number">Direction 03</p>
-            <h3>Average Slope</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>Cmax is widely used as an absorption-rate metric although it also depends on disposition.</dd></div>
-              <div><dt>Proposed idea</dt><dd>Estimate absorption rate directly from concentration–time data through the Average Slope metric.</dd></div>
-              <div><dt>Why it matters</dt><dd>It seeks a more interpretable and data-driven measure for bioequivalence assessment.</dd></div>
-            </dl>
-            <div class="direction-links">
-              <a href="https://doi.org/10.3390/app13042257">Paper</a>
-              <a href="https://github.com/vkaralis/average-slope">Code</a>
-            </div>
-          </article>
-
-          <article class="card direction-card">
-            <p class="direction-number">Direction 04</p>
-            <h3>ML/AI in Bioequivalence</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>Conventional bioequivalence analyses can overlook nonlinear patterns and interacting sources of variability.</dd></div>
-              <div><dt>Proposed idea</dt><dd>Use machine and deep learning to interrogate metrics, endpoints, and decision patterns.</dd></div>
-              <div><dt>Why it matters</dt><dd>It expands the analytical toolkit while keeping the clinical question—not the algorithm—at the centre.</dd></div>
-            </dl>
-            <div class="direction-links"><a href="https://doi.org/10.3390/app13010418">Paper</a></div>
-          </article>
-
-          <article class="card direction-card">
-            <p class="direction-number">Direction 05</p>
-            <h3>Synthetic Subjects</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>Clinical studies are constrained by recruitment, cost, time, and unnecessary human exposure.</dd></div>
-              <div><dt>Proposed idea</dt><dd>Develop generative models for scientifically controlled virtual and hybrid populations.</dd></div>
-              <div><dt>Why it matters</dt><dd>Validated augmentation may support smarter study design without treating synthetic data as real evidence.</dd></div>
-            </dl>
-            <div class="direction-links"><a href="https://doi.org/10.3390/app13158793">Paper</a></div>
-          </article>
-
-          <article class="card direction-card">
-            <p class="direction-number">Direction 06</p>
-            <h3>In Vitro–In Vivo Simulation</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>In vitro dissolution differences do not translate directly into expected clinical outcomes.</dd></div>
-              <div><dt>Proposed idea</dt><dd>Connect dissolution profiles with semi-physiological pharmacokinetic simulations.</dd></div>
-              <div><dt>Why it matters</dt><dd>It links formulation behaviour to prospective bioequivalence risk and study planning.</dd></div>
-            </dl>
-            <div class="direction-links"><a href="https://doi.org/10.3390/ma14030555">Paper</a></div>
-          </article>
-        </div>
       </div>
     </section>
 
@@ -1040,8 +987,13 @@
                 <h4>Gap-Entropy Testing (GET)</h4>
                 <p>GET is a novel statistical measure for revealing hidden patterns in the gaps between observations, beyond what the t-test can capture.</p>
                 <img class="subtopic-image" src="assets/GET.png" alt="Gap-Entropy Testing (GET)">
+                <dl class="method-details">
+                  <div><dt>Problem</dt><dd>Classical location-based tests may miss structural differences between datasets.</dd></div>
+                  <div><dt>Proposed idea</dt><dd>Use the entropy of ordered observation gaps to quantify hidden distributional structure.</dd></div>
+                  <div><dt>Why it matters</dt><dd>It provides a complementary lens when equal means do not imply similar data-generating patterns.</dd></div>
+                </dl>
                 <ol class="paper-list">
-                  <li><u>Karalis V</u>. Gap-Entropy Testing (GET): A Framework for Structural and Distributional Differences. <i>Applied Mathematics and Statistics</i> [2026]. doi: 10.53941/ams.2026.100019. <span class="paper-note">Seminal article</span></li>
+                  <li><u>Karalis V</u>. Gap-Entropy Testing (GET): A Framework for Structural and Distributional Differences. <i>Applied Mathematics and Statistics</i> [2026]. <a href="https://doi.org/10.53941/ams.2026.100019">Article</a>. <span class="paper-note">Seminal article</span></li>
                 </ol>
                 <p><span class="code-label">Code:</span> <a class="code-link" href="https://github.com/vkaralis/GAP-Entropy-Testing">https://github.com/vkaralis/GAP-Entropy-Testing</a></p>
               </section>
@@ -1050,19 +1002,30 @@
                 <h4>Vector-based Comparison (VBC)</h4>
                 <p>VBC is an alternative framework for considering endpoints in clinical studies. It treats endpoints as vectors in an N-dimensional space.</p>
                 <img class="subtopic-image" src="assets/VBC.png" alt="Vector-based Comparison (VBC)">
+                <dl class="method-details">
+                  <div><dt>Problem</dt><dd>Multi-endpoint clinical evidence is often reduced to separate, disconnected comparisons.</dd></div>
+                  <div><dt>Proposed idea</dt><dd>Represent endpoints as vectors and decompose their shared and orthogonal components.</dd></div>
+                  <div><dt>Why it matters</dt><dd>It creates a geometric framework for examining endpoint relationships beyond isolated summaries.</dd></div>
+                </dl>
                 <ol class="paper-list">
-                  <li><u>Karalis V</u>. A Vector Theory of Assessing Clinical Trials: An Application to Bioequivalence. <i>J Cardiovasc Dev Dis</i> [2024]. doi: 10.3390/jcdd11070185. <span class="paper-note">Seminal article</span></li>
+                  <li><u>Karalis V</u>. A Vector Theory of Assessing Clinical Trials: An Application to Bioequivalence. <i>J Cardiovasc Dev Dis</i> [2024]. <a href="https://doi.org/10.3390/jcdd11070185">Article</a>. <span class="paper-note">Seminal article</span></li>
                   <li>Kokkali M, <u>Karalis V</u>. Vector-Based Comparison and Average Slope Can Refine Bioequivalence Claims: A Machine and Deep Learning Approach. <i>Biopharm Drug Disp</i> [2026]. doi: 10.1002/bdd.70023</li>
                   <li>Kokkali M, <u>Karalis V</u>. Vector-based Comparison as a Novel Framework for Assessing Multi-endpoint Clinical Trials: Applications to Actual Data. <i>Clinical and Translational Discovery</i> [2026]. doi: 10.1002/ctd2.70180</li>
                 </ol>
+                <p><span class="code-label">Code:</span> <a class="code-link" href="https://github.com/vkaralis/vbc">https://github.com/vkaralis/vbc</a></p>
               </section>
 
               <section class="subtopic">
                 <h4>AI-generated subjects in clinical studies</h4>
                 <p>The use of generative artificial neural networks, including Normalizing Flow, WGANs, and VAEs, for synthesizing virtual subjects, thereby reducing the need for actual human exposure and reducing time and costs.</p>
                 <img class="subtopic-image" src="assets/AI_gen.png" alt="AI-generated subjects in clinical studies">
+                <dl class="method-details">
+                  <div><dt>Problem</dt><dd>Clinical studies are constrained by recruitment, cost, time, and unnecessary human exposure.</dd></div>
+                  <div><dt>Proposed idea</dt><dd>Develop generative models for scientifically controlled virtual and hybrid populations.</dd></div>
+                  <div><dt>Why it matters</dt><dd>Validated augmentation may support smarter study design without treating synthetic data as real evidence.</dd></div>
+                </dl>
                 <ol class="paper-list">
-                  <li>Papadopoulos D, <u>Karalis V</u>. Variational Autoencoders for Data Augmentation in Clinical Studies. <i>Applied Sci</i> [2023]. doi.org/10.3390/app13158793. <span class="paper-note">Seminal article</span></li>
+                  <li>Papadopoulos D, <u>Karalis V</u>. Variational Autoencoders for Data Augmentation in Clinical Studies. <i>Applied Sci</i> [2023]. <a href="https://doi.org/10.3390/app13158793">Article</a>. <span class="paper-note">Seminal article</span></li>
                   <li>Papadopoulos D, <u>Karalis V</u>. Introducing an Artificial Neural Network for Virtually Increasing the Sample Size of Bioequivalence Studies. <i>Applied Sci</i> [2024]. doi.org/10.3390/app14072970</li>
                   <li>Nikolopoulos A, <u>Karalis V</u>. Implementation of a Generative AI algorithm for Virtually Increasing the Sample Size of Clinical Studies. <i>Applied Sciences</i> [2024]. doi.org/10.3390/app14114570.</li>
                   <li>Papadopoulos D, Karali G, <u>Karalis V</u>. Bioequivalence Studies of Highly Variable Drugs: An Old Problem Addressed by Artificial Neural Networks. <i>Applied Sciences</i> [2024]. doi.org/10.3390/app14125279.</li>
@@ -1077,19 +1040,30 @@
                 <h4>Average Slope (AS)</h4>
                 <p>AS is a new pharmacokinetic parameter proposed to express more appropriately the rate of absorption and replace Cmax. AS is calculated directly from the concentration-time data without any assumptions.</p>
                 <img class="subtopic-image" src="assets/AS.png" alt="Average Slope (AS)">
+                <dl class="method-details">
+                  <div><dt>Problem</dt><dd>Cmax is widely used as an absorption-rate metric although it also depends on disposition.</dd></div>
+                  <div><dt>Proposed idea</dt><dd>Estimate absorption rate directly from concentration–time data through the Average Slope metric.</dd></div>
+                  <div><dt>Why it matters</dt><dd>It seeks a more interpretable and data-driven measure for bioequivalence assessment.</dd></div>
+                </dl>
                 <ol class="paper-list">
-                  <li><u>Karalis V</u>. On the Interplay between Machine Learning, Population Pharmacokinetics, and Bioequivalence to Introduce Average Slope as a New Measure for Absorption Rate. <i>Applied Sci</i> [2023]. doi.org/10.3390/app13042257. <span class="paper-note">Seminal article</span></li>
+                  <li><u>Karalis V</u>. On the Interplay between Machine Learning, Population Pharmacokinetics, and Bioequivalence to Introduce Average Slope as a New Measure for Absorption Rate. <i>Applied Sci</i> [2023]. <a href="https://doi.org/10.3390/app13042257">Article</a>. <span class="paper-note">Seminal article</span></li>
                   <li><u>Karalis V</u>. An In-Silico Approach Toward the Appropriate Absorption Rate Metric in Bioequivalence. <i>Pharmaceuticals</i> [2023]. doi: 10.3390/ph16050725.</li>
                   <li>Kokkali M, <u>Karalis V</u>. Average Slope vs. Cmax: Which Truly Reflects the Drug Absorption Rate? <i>Applied Sciences</i> [2024]. doi.org/10.3390/app14146115.</li>
                 </ol>
+                <p><span class="code-label">Code:</span> <a class="code-link" href="https://github.com/vkaralis/average-slope">https://github.com/vkaralis/average-slope</a></p>
               </section>
 
               <section class="subtopic">
                 <h4>Machine learning in bioequivalence</h4>
                 <p>This research direction introduces the use of machine learning approaches in bioequivalence studies.</p>
                 <img class="subtopic-image" src="assets/ML_BE.png" alt="Machine learning in bioequivalence">
+                <dl class="method-details">
+                  <div><dt>Problem</dt><dd>Conventional bioequivalence analyses can overlook nonlinear patterns and interacting sources of variability.</dd></div>
+                  <div><dt>Proposed idea</dt><dd>Use machine and deep learning to interrogate metrics, endpoints, and decision patterns.</dd></div>
+                  <div><dt>Why it matters</dt><dd>It expands the analytical toolkit while keeping the clinical question—not the algorithm—at the centre.</dd></div>
+                </dl>
                 <ol class="paper-list">
-                  <li><u>Karalis V</u>. Machine Learning in Bioequivalence: Towards Identifying an Appropriate Measure of Absorption Rate. <i>Applied Sci</i> [2023]. doi.org/10.3390/app13010418. <span class="paper-note">Seminal article</span></li>
+                  <li><u>Karalis V</u>. Machine Learning in Bioequivalence: Towards Identifying an Appropriate Measure of Absorption Rate. <i>Applied Sci</i> [2023]. <a href="https://doi.org/10.3390/app13010418">Article</a>. <span class="paper-note">Seminal article</span></li>
                 </ol>
               </section>
 
@@ -1097,8 +1071,13 @@
                 <h4>In Vitro - In Vivo Simulations (IVIVS)</h4>
                 <p>IVIVS introduces a semi-physiological modeling approach proposed to predict the outcome of a bioequivalence study based on in vitro dissolution data.</p>
                 <img class="subtopic-image" src="assets/IVIVS.png" alt="In Vitro - In Vivo Simulations (IVIVS)">
+                <dl class="method-details">
+                  <div><dt>Problem</dt><dd>In vitro dissolution differences do not translate directly into expected clinical outcomes.</dd></div>
+                  <div><dt>Proposed idea</dt><dd>Connect dissolution profiles with semi-physiological pharmacokinetic simulations.</dd></div>
+                  <div><dt>Why it matters</dt><dd>It links formulation behaviour to prospective bioequivalence risk and study planning.</dd></div>
+                </dl>
                 <ol class="paper-list">
-                  <li>Vlachou M, <u>Karalis V</u>. An In Vitro - In Vivo Simulation Approach for the Prediction of Bioequivalence. <i>Materials</i> 14(3):555 [2021]. DOI: 10.3390/ma14030555 <span class="paper-note">Seminal article</span></li>
+                  <li>Vlachou M, <u>Karalis V</u>. An In Vitro - In Vivo Simulation Approach for the Prediction of Bioequivalence. <i>Materials</i> 14(3):555 [2021]. <a href="https://doi.org/10.3390/ma14030555">Article</a>. <span class="paper-note">Seminal article</span></li>
                 </ol>
               </section>
             </div>
